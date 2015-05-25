@@ -15,6 +15,7 @@
 		E65A5AD51B12D17B00BE9455 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65A5AD41B12D17B00BE9455 /* Images.xcassets */; };
 		E65A5AD81B12D17B00BE9455 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E65A5AD61B12D17B00BE9455 /* LaunchScreen.xib */; };
 		E65A5AE41B12D17B00BE9455 /* Tappy_PlaneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AE31B12D17B00BE9455 /* Tappy_PlaneTests.m */; };
+		E65A5AF01B12F3EA00BE9455 /* Planes.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E65A5AEF1B12F3EA00BE9455 /* Planes.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		E65A5ADD1B12D17B00BE9455 /* Tappy PlaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tappy PlaneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65A5AE21B12D17B00BE9455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E65A5AE31B12D17B00BE9455 /* Tappy_PlaneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tappy_PlaneTests.m; sourceTree = "<group>"; };
+		E65A5AEF1B12F3EA00BE9455 /* Planes.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Planes.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,8 @@
 		E65A5AC11B12D17B00BE9455 /* Tappy Plane */ = {
 			isa = PBXGroup;
 			children = (
+				E65A5AEE1B12F3DC00BE9455 /* Graphics */,
+				E65A5AED1B12F3D000BE9455 /* Resources */,
 				E65A5AC61B12D17B00BE9455 /* AppDelegate.h */,
 				E65A5AC71B12D17B00BE9455 /* AppDelegate.m */,
 				E65A5AC91B12D17B00BE9455 /* GameScene.h */,
@@ -122,6 +126,21 @@
 				E65A5AE21B12D17B00BE9455 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E65A5AED1B12F3D000BE9455 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E65A5AEE1B12F3DC00BE9455 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				E65A5AEF1B12F3EA00BE9455 /* Planes.atlas */,
+			);
+			name = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +225,7 @@
 			files = (
 				E65A5AD81B12D17B00BE9455 /* LaunchScreen.xib in Resources */,
 				E65A5AD51B12D17B00BE9455 /* Images.xcassets in Resources */,
+				E65A5AF01B12F3EA00BE9455 /* Planes.atlas in Resources */,
 				E65A5AD31B12D17B00BE9455 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
