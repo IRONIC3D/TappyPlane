@@ -11,6 +11,10 @@
 
 @implementation GameViewController
 
+-(void)viewDidLoad {
+    [super viewDidLoad];
+}
+
 - (void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
@@ -20,6 +24,7 @@
     if (!skView.scene) {
         skView.showsFPS = YES;
         skView.showsNodeCount = YES;
+        skView.showsDrawCount = YES;
         /* Sprite Kit applies additional optimizations to improve rendering performance */
         skView.ignoresSiblingOrder = YES;
         
