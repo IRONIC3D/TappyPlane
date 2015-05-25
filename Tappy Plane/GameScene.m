@@ -7,11 +7,28 @@
 //
 
 #import "GameScene.h"
+#import "Plane.h"
+
+@interface GameScene()
+
+@property (nonatomic) Plane *player;
+@property (nonatomic) SKNode *world;
+
+@end
 
 @implementation GameScene
 
 -(instancetype)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
+        
+        // Setup world
+        _world = [SKNode node];
+        [self addChild:_world];
+        
+        // Setup player
+        _player = [[Plane alloc] init];
+        _player.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        [_world addChild:_player];
         
     }
     
