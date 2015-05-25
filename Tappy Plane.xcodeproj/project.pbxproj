@@ -10,7 +10,6 @@
 		E65A5AC51B12D17B00BE9455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AC41B12D17B00BE9455 /* main.m */; };
 		E65A5AC81B12D17B00BE9455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AC71B12D17B00BE9455 /* AppDelegate.m */; };
 		E65A5ACB1B12D17B00BE9455 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5ACA1B12D17B00BE9455 /* GameScene.m */; };
-		E65A5ACD1B12D17B00BE9455 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E65A5ACC1B12D17B00BE9455 /* GameScene.sks */; };
 		E65A5AD01B12D17B00BE9455 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5ACF1B12D17B00BE9455 /* GameViewController.m */; };
 		E65A5AD31B12D17B00BE9455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65A5AD11B12D17B00BE9455 /* Main.storyboard */; };
 		E65A5AD51B12D17B00BE9455 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65A5AD41B12D17B00BE9455 /* Images.xcassets */; };
@@ -36,7 +35,6 @@
 		E65A5AC71B12D17B00BE9455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E65A5AC91B12D17B00BE9455 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		E65A5ACA1B12D17B00BE9455 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		E65A5ACC1B12D17B00BE9455 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		E65A5ACE1B12D17B00BE9455 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		E65A5ACF1B12D17B00BE9455 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		E65A5AD21B12D17B00BE9455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				E65A5AC71B12D17B00BE9455 /* AppDelegate.m */,
 				E65A5AC91B12D17B00BE9455 /* GameScene.h */,
 				E65A5ACA1B12D17B00BE9455 /* GameScene.m */,
-				E65A5ACC1B12D17B00BE9455 /* GameScene.sks */,
 				E65A5ACE1B12D17B00BE9455 /* GameViewController.h */,
 				E65A5ACF1B12D17B00BE9455 /* GameViewController.m */,
 				E65A5AD11B12D17B00BE9455 /* Main.storyboard */,
@@ -209,7 +206,6 @@
 			files = (
 				E65A5AD81B12D17B00BE9455 /* LaunchScreen.xib in Resources */,
 				E65A5AD51B12D17B00BE9455 /* Images.xcassets in Resources */,
-				E65A5ACD1B12D17B00BE9455 /* GameScene.sks in Resources */,
 				E65A5AD31B12D17B00BE9455 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
