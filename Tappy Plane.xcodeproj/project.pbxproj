@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E658895E1B140173007EED49 /* PlaneAnimations.plist in Resources */ = {isa = PBXBuildFile; fileRef = E658895D1B140173007EED49 /* PlaneAnimations.plist */; };
 		E65A5AC51B12D17B00BE9455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AC41B12D17B00BE9455 /* main.m */; };
 		E65A5AC81B12D17B00BE9455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AC71B12D17B00BE9455 /* AppDelegate.m */; };
 		E65A5ACB1B12D17B00BE9455 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5ACA1B12D17B00BE9455 /* GameScene.m */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E658895D1B140173007EED49 /* PlaneAnimations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlaneAnimations.plist; sourceTree = "<group>"; };
 		E65A5ABF1B12D17B00BE9455 /* Tappy Plane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tappy Plane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65A5AC31B12D17B00BE9455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E65A5AC41B12D17B00BE9455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		E65A5AED1B12F3D000BE9455 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E658895D1B140173007EED49 /* PlaneAnimations.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E65A5AD81B12D17B00BE9455 /* LaunchScreen.xib in Resources */,
+				E658895E1B140173007EED49 /* PlaneAnimations.plist in Resources */,
 				E65A5AD51B12D17B00BE9455 /* Images.xcassets in Resources */,
 				E65A5AF01B12F3EA00BE9455 /* Planes.atlas in Resources */,
 				E65A5AD31B12D17B00BE9455 /* Main.storyboard in Resources */,
@@ -456,6 +460,7 @@
 				E65A5AE91B12D17B00BE9455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E65A5AEA1B12D17B00BE9455 /* Build configuration list for PBXNativeTarget "Tappy PlaneTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +469,7 @@
 				E65A5AEC1B12D17B00BE9455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
