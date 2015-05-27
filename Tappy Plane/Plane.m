@@ -8,15 +8,35 @@
 
 #import "Plane.h"
 
+@interface Plane()
+
+@property (nonatomic) NSMutableArray *planeAnimations;  // Holds animation actions.
+
+@end
+
 @implementation Plane
 
 -(instancetype)init {
     self = [super initWithImageNamed:@"planeBlue1@2x"];
     if (self) {
+        // Init array to hold animation actions.
+        _planeAnimations = [[NSMutableArray alloc] init];
         
+        // Load animation plist file.
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"PlaneAnimations" ofType:@"plist"];
+        NSDictionary *animations = [NSDictionary dictionaryWithContentsOfFile:path];
+        for (NSString *key in animations) {
+            [self.planeAnimations addObject:[self animationFromArray:[animations objectForKey:key] withDuration:0.2]];
+        }
+        
+        [self setRandomColour];
     }
     
     return self;
+}
+
+-(void)setRandomColour {
+    [self runAction:[self.planeAnimations objectAtIndex:arc4random_uniform(self.planeAnimations.count)]];
 }
 
 -(SKAction *)animationFromArray:(NSArray *)textureNames withDuration:(CGFloat)duration {

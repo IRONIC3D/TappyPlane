@@ -37,6 +37,9 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
+    for (UITouch *touch in touches) {
+        [self.player setRandomColour];
+    }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
