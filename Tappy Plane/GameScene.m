@@ -21,6 +21,9 @@
 -(instancetype)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         
+        // Setup physics.
+        self.physicsWorld.gravity = CGVectorMake(0.0, -5.5);
+        
         // Setup world
         _world = [SKNode node];
         [self addChild:_world];
@@ -28,6 +31,8 @@
         // Setup player
         _player = [[Plane alloc] init];
         _player.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        _player.physicsBody.affectedByGravity = NO;
+        _player.engineRunning = YES;
         [_world addChild:_player];
         
     }
@@ -38,13 +43,20 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     for (UITouch *touch in touches) {
-        self.player.engineRunning = !self.player.engineRunning;
-        [self.player setRandomColour];
+        _player.physicsBody.affectedByGravity = YES;
+        self.player.accelerating = YES;
+    }
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    for (UITouch *touch in touches) {
+        self.player.accelerating = NO;
     }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+    [self.player update];
 }
 
 @end
