@@ -10,6 +10,7 @@
 		E62097981B2945B300E19602 /* PlanePuffTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = E62097961B2945B300E19602 /* PlanePuffTrail.sks */; };
 		E62097991B2945B300E19602 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = E62097971B2945B300E19602 /* spark.png */; };
 		E620979C1B2961B600E19602 /* ScrollingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E620979B1B2961B600E19602 /* ScrollingNode.m */; };
+		E620979F1B29634300E19602 /* ScrollingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E620979E1B29634300E19602 /* ScrollingLayer.m */; };
 		E658895E1B140173007EED49 /* PlaneAnimations.plist in Resources */ = {isa = PBXBuildFile; fileRef = E658895D1B140173007EED49 /* PlaneAnimations.plist */; };
 		E65A5AC51B12D17B00BE9455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AC41B12D17B00BE9455 /* main.m */; };
 		E65A5AC81B12D17B00BE9455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AC71B12D17B00BE9455 /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 		E62097971B2945B300E19602 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		E620979A1B2961B600E19602 /* ScrollingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingNode.h; sourceTree = "<group>"; };
 		E620979B1B2961B600E19602 /* ScrollingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingNode.m; sourceTree = "<group>"; };
+		E620979D1B29634300E19602 /* ScrollingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingLayer.h; sourceTree = "<group>"; };
+		E620979E1B29634300E19602 /* ScrollingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingLayer.m; sourceTree = "<group>"; };
 		E658895D1B140173007EED49 /* PlaneAnimations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlaneAnimations.plist; sourceTree = "<group>"; };
 		E65A5ABF1B12D17B00BE9455 /* Tappy Plane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tappy Plane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65A5AC31B12D17B00BE9455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				E65A5AF31B12F44F00BE9455 /* Plane.m */,
 				E620979A1B2961B600E19602 /* ScrollingNode.h */,
 				E620979B1B2961B600E19602 /* ScrollingNode.m */,
+				E620979D1B29634300E19602 /* ScrollingLayer.h */,
+				E620979E1B29634300E19602 /* ScrollingLayer.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			files = (
 				E65A5AD01B12D17B00BE9455 /* GameViewController.m in Sources */,
 				E65A5AC81B12D17B00BE9455 /* AppDelegate.m in Sources */,
+				E620979F1B29634300E19602 /* ScrollingLayer.m in Sources */,
 				E65A5AF41B12F44F00BE9455 /* Plane.m in Sources */,
 				E65A5ACB1B12D17B00BE9455 /* GameScene.m in Sources */,
 				E65A5AC51B12D17B00BE9455 /* main.m in Sources */,
