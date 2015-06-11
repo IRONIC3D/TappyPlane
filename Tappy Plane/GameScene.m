@@ -18,6 +18,8 @@
 
 @end
 
+static const CGFloat kMinFPS = 10.0 / 60.0;
+
 @implementation GameScene
 
 -(instancetype)initWithSize:(CGSize)size {
@@ -73,7 +75,16 @@
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+    
+    static NSTimeInterval lastCallTime;
+    NSTimeInterval timeElapsed = currentTime - lastCallTime;
+    if (timeElapsed > kMinFPS) {
+        timeElapsed = kMinFPS;
+    }
+    lastCallTime = currentTime;
+    
     [self.player update];
+    [self.background updateWithTimeElapsed:timeElapsed];
 }
 
 @end
