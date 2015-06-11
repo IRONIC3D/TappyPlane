@@ -8,11 +8,13 @@
 
 #import "GameScene.h"
 #import "Plane.h"
+#import "ScrollingLayer.h"
 
 @interface GameScene()
 
 @property (nonatomic) Plane *player;
 @property (nonatomic) SKNode *world;
+@property (nonatomic) ScrollingLayer *background;
 
 @end
 
@@ -21,12 +23,27 @@
 -(instancetype)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         
+        // Get atlas file.
+        SKTextureAtlas *graphics = [SKTextureAtlas atlasNamed:@"Graphics"];
+        
         // Setup physics.
         self.physicsWorld.gravity = CGVectorMake(0.0, -5.5);
         
         // Setup world
         _world = [SKNode node];
         [self addChild:_world];
+        
+        // Setup background.
+        NSMutableArray *backgroundTiles = [[NSMutableArray alloc] init];
+        for (int i = 0; i < 3; i++) {
+            [backgroundTiles addObject:[SKSpriteNode spriteNodeWithTexture:[graphics textureNamed:@"background"]]];
+        }
+        
+        _background = [[ScrollingLayer alloc] initWithTiles:backgroundTiles];
+        _background.position = CGPointZero;
+        _background.horizontalScrollSpeed = -60;
+        _background.scrolling = YES;
+        [_world addChild:_background];
         
         // Setup player
         _player = [[Plane alloc] init];
