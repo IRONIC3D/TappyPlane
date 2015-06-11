@@ -11,7 +11,9 @@
 @implementation ScrollingNode
 
 -(void)updateWithTimeElapsed:(NSTimeInterval)timeElapsed {
-    self.position = CGPointMake(self.position.y + (self.horizontalScrollSpeed * timeElapsed), self.position.y);
+    if (self.scrolling) {
+        self.position = CGPointMake(self.position.y + (self.horizontalScrollSpeed * timeElapsed), self.position.y);
+    }
 }
 
 @end
