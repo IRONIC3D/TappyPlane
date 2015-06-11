@@ -38,6 +38,7 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     for (UITouch *touch in touches) {
+        self.player.engineRunning = !self.player.engineRunning;
         [self.player setRandomColour];
     }
 }
