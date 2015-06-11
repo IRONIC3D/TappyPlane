@@ -40,6 +40,16 @@
 
 -(void)updateWithTimeElapsed:(NSTimeInterval)timeElapsed {
     [super updateWithTimeElapsed:timeElapsed];
+    
+    if (self.scrolling && self.horizontalScrollSpeed < 0 && self.scene) {   // Check if the node is addded to a scene or else it will crash
+        [self enumerateChildNodesWithName:@"Tile" usingBlock:^(SKNode *node, BOOL *stop) {
+            CGPoint nodePositionInScene = [self convertPoint:node.position toNode:self.scene];
+            
+            if (nodePositionInScene.x + node.frame.size.width < 0) {
+                
+            }
+        }];
+    }
 }
 
 @end
