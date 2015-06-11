@@ -45,8 +45,10 @@
         [self enumerateChildNodesWithName:@"Tile" usingBlock:^(SKNode *node, BOOL *stop) {
             CGPoint nodePositionInScene = [self convertPoint:node.position toNode:self.scene];
             
-            if (nodePositionInScene.x + node.frame.size.width < 0) {
-                
+            if (nodePositionInScene.x + node.frame.size.width < -self.scene.size.width * self.scene.anchorPoint.x) {
+                node.position = CGPointMake(self.rightmostTile.position.x +
+                                            self.rightmostTile.size.width, node.position.y);
+                self.rightmostTile = (SKSpriteNode *)node;
             }
         }];
     }
