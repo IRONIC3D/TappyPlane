@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E62097981B2945B300E19602 /* PlanePuffTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = E62097961B2945B300E19602 /* PlanePuffTrail.sks */; };
+		E62097991B2945B300E19602 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = E62097971B2945B300E19602 /* spark.png */; };
 		E658895E1B140173007EED49 /* PlaneAnimations.plist in Resources */ = {isa = PBXBuildFile; fileRef = E658895D1B140173007EED49 /* PlaneAnimations.plist */; };
 		E65A5AC51B12D17B00BE9455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AC41B12D17B00BE9455 /* main.m */; };
 		E65A5AC81B12D17B00BE9455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AC71B12D17B00BE9455 /* AppDelegate.m */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E62097961B2945B300E19602 /* PlanePuffTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlanePuffTrail.sks; sourceTree = "<group>"; };
+		E62097971B2945B300E19602 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		E658895D1B140173007EED49 /* PlaneAnimations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlaneAnimations.plist; sourceTree = "<group>"; };
 		E65A5ABF1B12D17B00BE9455 /* Tappy Plane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tappy Plane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65A5AC31B12D17B00BE9455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E62097951B29459B00E19602 /* Particle Effects */ = {
+			isa = PBXGroup;
+			children = (
+				E62097961B2945B300E19602 /* PlanePuffTrail.sks */,
+				E62097971B2945B300E19602 /* spark.png */,
+			);
+			name = "Particle Effects";
+			sourceTree = "<group>";
+		};
 		E65A5AB61B12D17B00BE9455 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 		E65A5AC11B12D17B00BE9455 /* Tappy Plane */ = {
 			isa = PBXGroup;
 			children = (
+				E62097951B29459B00E19602 /* Particle Effects */,
 				E65A5AF11B12F43400BE9455 /* Entities */,
 				E65A5AEE1B12F3DC00BE9455 /* Graphics */,
 				E65A5AED1B12F3D000BE9455 /* Resources */,
@@ -241,6 +255,8 @@
 			files = (
 				E65A5AD81B12D17B00BE9455 /* LaunchScreen.xib in Resources */,
 				E658895E1B140173007EED49 /* PlaneAnimations.plist in Resources */,
+				E62097981B2945B300E19602 /* PlanePuffTrail.sks in Resources */,
+				E62097991B2945B300E19602 /* spark.png in Resources */,
 				E65A5AD51B12D17B00BE9455 /* Images.xcassets in Resources */,
 				E65A5AF01B12F3EA00BE9455 /* Planes.atlas in Resources */,
 				E65A5AD31B12D17B00BE9455 /* Main.storyboard in Resources */,
