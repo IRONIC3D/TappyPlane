@@ -32,8 +32,8 @@
         _player = [[Plane alloc] init];
         _player.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         _player.physicsBody.affectedByGravity = NO;
-        _player.engineRunning = YES;
         [_world addChild:_player];
+        _player.engineRunning = YES;
         
     }
     
