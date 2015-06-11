@@ -11,6 +11,8 @@
 @interface Plane()
 
 @property (nonatomic) NSMutableArray *planeAnimations;  // Holds animation actions.
+@property (nonatomic) SKEmitterNode *puffTrailEmitter;
+@property (nonatomic) CGFloat puffTrailBirthRate;
 
 @end
 
@@ -31,6 +33,14 @@ static NSString* const kKeyPlaneAnimation = @"PlaneAnimation";
             [self.planeAnimations addObject:[self animationFromArray:[animations objectForKey:key] withDuration:0.2]];
         }
         
+        // Setup puff trail particle effect.
+        NSString *particleFile = [[NSBundle mainBundle] pathForResource:@"PlanePuffTrail" ofType:@"sks"];
+        _puffTrailEmitter = [NSKeyedUnarchiver unarchiveObjectWithFile:particleFile];
+        _puffTrailEmitter.position = CGPointMake(-self.size.width * 0.5, -5);
+        [self addChild:_puffTrailEmitter];
+        self.puffTrailBirthRate = self.puffTrailEmitter.particleBirthRate;
+        self.puffTrailEmitter.particleBirthRate = 0;
+        
         [self setRandomColour];
     }
     
@@ -41,8 +51,11 @@ static NSString* const kKeyPlaneAnimation = @"PlaneAnimation";
     _engineRunning = engineRunning;
     if (engineRunning) {
         [self actionForKey:kKeyPlaneAnimation].speed = 1;
+        self.puffTrailEmitter.particleBirthRate = self.puffTrailBirthRate;
+        
     } else {
         [self actionForKey:kKeyPlaneAnimation].speed = 0;
+        self.puffTrailEmitter.particleBirthRate = 0;
     }
 }
 
