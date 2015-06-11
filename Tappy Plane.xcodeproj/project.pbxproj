@@ -20,7 +20,7 @@
 		E65A5AD51B12D17B00BE9455 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65A5AD41B12D17B00BE9455 /* Images.xcassets */; };
 		E65A5AD81B12D17B00BE9455 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E65A5AD61B12D17B00BE9455 /* LaunchScreen.xib */; };
 		E65A5AE41B12D17B00BE9455 /* Tappy_PlaneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AE31B12D17B00BE9455 /* Tappy_PlaneTests.m */; };
-		E65A5AF01B12F3EA00BE9455 /* Planes.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E65A5AEF1B12F3EA00BE9455 /* Planes.atlas */; };
+		E65A5AF01B12F3EA00BE9455 /* Graphics.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E65A5AEF1B12F3EA00BE9455 /* Graphics.atlas */; };
 		E65A5AF41B12F44F00BE9455 /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = E65A5AF31B12F44F00BE9455 /* Plane.m */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,7 @@
 		E65A5ADD1B12D17B00BE9455 /* Tappy PlaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tappy PlaneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65A5AE21B12D17B00BE9455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E65A5AE31B12D17B00BE9455 /* Tappy_PlaneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tappy_PlaneTests.m; sourceTree = "<group>"; };
-		E65A5AEF1B12F3EA00BE9455 /* Planes.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Planes.atlas; sourceTree = "<group>"; };
+		E65A5AEF1B12F3EA00BE9455 /* Graphics.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Graphics.atlas; sourceTree = "<group>"; };
 		E65A5AF21B12F44F00BE9455 /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
 		E65A5AF31B12F44F00BE9455 /* Plane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plane.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,7 +165,7 @@
 		E65A5AEE1B12F3DC00BE9455 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				E65A5AEF1B12F3EA00BE9455 /* Planes.atlas */,
+				E65A5AEF1B12F3EA00BE9455 /* Graphics.atlas */,
 			);
 			name = Graphics;
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 				E62097981B2945B300E19602 /* PlanePuffTrail.sks in Resources */,
 				E62097991B2945B300E19602 /* spark.png in Resources */,
 				E65A5AD51B12D17B00BE9455 /* Images.xcassets in Resources */,
-				E65A5AF01B12F3EA00BE9455 /* Planes.atlas in Resources */,
+				E65A5AF01B12F3EA00BE9455 /* Graphics.atlas in Resources */,
 				E65A5AD31B12D17B00BE9455 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
